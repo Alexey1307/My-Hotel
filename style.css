@@ -1,0 +1,50 @@
+.tapnav{
+	display: flex;
+	background-color: white;
+}
+ul{
+	display: flex;
+	list-style-type: none; /*убираем маркеры*/
+	font-size: 1.2em;	
+}
+li a{
+	margin: 0em 1em;
+	text-decoration: none; /*убираем подчеркивание у ссылок*/
+}
+
+.flexbox1{
+	display: flex;
+	padding: 20em;
+	flex-direction: column; /*Задает направление главных осей, column - в столбик*/
+	background-image: url(images/wpapers_ru_Солнечная-погода.jpg);
+}
+.name{
+	display: flex;
+	font-size: 5vmax;
+	color: orange;
+	width: 20em;
+}
+.description{
+color: white;
+font-size: 2em;
+width: 20em;
+}
+
+.flexbox2{
+	display: flex;
+	background-color: orange;
+	color: white;
+}
+.flex2 > li{
+	font-size: 1.5em;
+	margin-right: 3em;
+}
+.icons{
+	width: 5em;
+	margin-left: 4em;
+	p
+}
+#bbq{
+	margin-left: 7.5em;
+}
+
