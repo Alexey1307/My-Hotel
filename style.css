@@ -25,9 +25,9 @@ li a{
 	width: 20em;
 }
 .description{
-color: white;
-font-size: 2em;
-width: 20em;
+	color: white;
+	font-size: 2em;
+	width: 20em;
 }
 
 .flexbox2{
@@ -42,9 +42,24 @@ width: 20em;
 .icons{
 	width: 5em;
 	margin-left: 4em;
-	p
 }
 #bbq{
 	margin-left: 7.5em;
 }
 
+#swing {
+	margin-left: 7em;
+}
+#wifi{
+	margin-left: 6.5em;
+}
+
+.flexbox4{
+	display: flex;
+}
+#rooms{
+	text-decoration: none;
+	color: #2B00FF;
+	font-size: 3em;
+	margin: 2em;
+}
