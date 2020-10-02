@@ -57,9 +57,26 @@ li a{
 .flexbox4{
 	display: flex;
 }
-#rooms{
+#room{
 	text-decoration: none;
 	color: #2B00FF;
 	font-size: 3em;
 	margin: 2em;
+}
+
+.flexbox5{
+	display: flex;
+	flex-direction: column; /*расположение flex-элементов в столбец*/
+	
+
+}
+#rooms_1{
+	margin-bottom: 5em;
+	height: 90vh;
+	margin-left: 30em;
+}
+#rooms_2{
+	height: 90vh;
+	width:25vw;
+	margin-left: 62em;
 }
