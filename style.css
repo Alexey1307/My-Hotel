@@ -59,9 +59,8 @@ li a{
 }
 #room{
 	text-decoration: none;
-	color: #2B00FF;
 	font-size: 3em;
-	margin: 1em 0 1em 40vw;
+	margin: 1em 0 0 40vw;
 }
 
 .flexbox5 div{
