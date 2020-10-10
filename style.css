@@ -61,22 +61,36 @@ li a{
 	text-decoration: none;
 	color: #2B00FF;
 	font-size: 3em;
-	margin: 2em;
+	margin: 1em 0 1em 40vw;
 }
 
-.flexbox5{
+.flexbox5 div{
 	display: flex;
-	flex-direction: column; /*расположение flex-элементов в столбец*/
-	
+	margin-top: 5px;
+	/*border: 5px solid red;*/
+	flex-direction: row; /*расположение flex-элементов*/
+	justify-content: space-between;
 
+
+}
+p, h1{
+	padding: 1em;
 }
 #rooms_1{
 	margin-bottom: 5em;
 	height: 90vh;
-	margin-left: 30em;
 }
 #rooms_2{
 	height: 90vh;
-	width:25vw;
-	margin-left: 62em;
+}
+
+footer{
+	display: flex;
+	margin-top: 2em;
+	color: white;
+	background-color:grey;
+	justify-content: flex-end;
+}
+#footer_name{
+	padding-right: 40em;
 }
