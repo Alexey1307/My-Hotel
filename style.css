@@ -1,103 +1,87 @@
-ul{
-	display: flex;
-	flex-direction: row;
-	list-style-type: none; /*убираем маркеры*/
-	width: 95%;
-	justify-content: space-between;
+.container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(auto, 1fr)); /*auto*/
+	grid-gap: 0.5em;
+	background-image: url('images/wpapers_ru_Солнечная-погода.jpg');
 	
 }
-li a{
-	text-decoration: none; /*убираем подчеркивание у ссылок*/
-	color: #38D90C;
-	font-size: 1.25em;
+
+.container >*{
+	/*border: solid yellow 2px;*/
+	
 }
-li:nth-child(1){
-	color: green;
-	font-size: 1.25em;
-	cursor: pointer;
-}
-li:nth-child(2){
-	color: crimson;
-	font-size: 1.25em;
-}
-#booking{
-	color: blue;
-}
-.flexbox1{
-	display: flex;
-	padding: 20em;
-	flex-direction: column; /*Задает направление главных осей, column - в столбик*/
-	background-image: url(images/wpapers_ru_Солнечная-погода.jpg);
-}
-.name{
-	display: flex;
-	font-size: 5vmax;
+
+.header{
 	color: orange;
-	width: 20em;
-}
-.description{
-	color: white;
 	font-size: 2em;
-	width: 20em;
+	grid-column: 1/4;
+	justify-self: center;
 }
-
-.flexbox2{
-	display: flex;
-	background-color: orange;
-	color: white;
+@media (min-width:48em){
+	.header{
+	font-size: 2.5em;
+	}
 }
-.flex2 > li{
-	font-size: 1.5em;
-	margin-right: 3em;
-}
-.icons{
-	width: 5em;
-	margin-left: 4em;
-}
-#bbq{
-	margin-left: 7.5em;
-}
-
-#swing {
-	margin-left: 7em;
-}
-#wifi{
-	margin-left: 6.5em;
-}
-
-.flexbox4{
-	display: flex;
-}
-#room{
-	text-decoration: none;
+@media (min-width:62em){
+	.header{
 	font-size: 3em;
-	margin: 1em 0 0 40vw;
+	}
 }
 
-.flexbox5 div{
-	display: flex;
-	margin-top: 5px;
-	flex-direction: row; /*расположение flex-элементов*/
-	justify-content: space-between;
-}
-p, h1{
-	padding: 1em;
-}
-#rooms_1{
-	margin-bottom: 5em;
-	height: 90vh;
-}
-#rooms_2{
-	height: 90vh;
-}
-
-footer{
-	display: flex;
-	margin-top: 2em;
+.nav{
 	color: white;
-	background-color:grey;
-	justify-content: flex-end;
+	margin-bottom: 1em;
+	grid-column: 1/4;
 }
-#footer_name{
-	padding-right: 40em;
+
+.main{
+	color: white;
+	text-shadow: 1px 1px 1px blue;
 }
+
+.footer{
+	grid-column: 1/4;
+}
+
+.phone{
+	color: white;
+	text-shadow: 1px 1px 1px green;
+}
+
+.icons{
+	max-width: 16%;;
+}
+@media(min-width: 35em){
+	.icons{
+	max-width: 14%;
+	}
+}
+@media(min-width: 48em){
+	.icons{
+	max-width: 12%;
+	}
+}
+@media(min-width: 62em){
+	.icons{
+	max-width: 10%;
+	}
+}
+@media(min-width: 75em){
+	.icons{
+	max-width: 8%;
+	}
+}
+
+@media (min-width:48em){
+	li, p{
+	font-size: 1.5em;
+	}
+}
+@media (min-width:62em){
+	li, p{
+	font-size: 2em;
+	}
+}
+
+
+
